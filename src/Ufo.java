@@ -4,7 +4,7 @@ public class Ufo {
 
     //[...]
 
-    public Ufo() {
+    public  Ufo() {
         rumpf = new GLZylinder(0, 0, 0, 50, 20);}
         public void bewegelinks() {
        rumpf.verschiebe(-2,0,0);
@@ -22,6 +22,10 @@ public class Ufo {
              public void bewegestartpunkt () {
         rumpf.setzePosition(0, 0, 0);
     }
+            public void bewegevorne () {
+        rumpf.verschiebe(0, 1, 0);
+    }
+
     public double gibX(){
         return rumpf.gibX();
     }
@@ -31,6 +35,7 @@ public class Ufo {
     public double gibZ(){
         return rumpf.gibZ();
     }
+
         }
 
 
